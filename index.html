@@ -2,9 +2,15 @@
 <html>
 <head>
 	<title>Neko Location</title>
-	<script type="text/javascript" src="https://neko-komori.github.io/neko_locator.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="https://neko-komori.github.io/asset/neko-komori.js"></script>
 </head>
 <body>
-<span id="lokasi"></span>
+<h1 id="demo">Melacak Posisi...</h1>
+<script>
+	neko.melacakPosisi(function (){
+		document.getElementById("demo").innerHTML = "Posisi ditemukan : "+ this.posisi;
+	});
+</script>
 </body>
 </html>
