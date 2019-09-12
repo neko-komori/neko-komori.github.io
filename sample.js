@@ -14,13 +14,13 @@ document.getElementById("demo").innerHTML = this.responseText;
 
 else{
 
-document.getElementById("demo").innerHTML = this.readyState+" masih ambil data";
+document.getElementById("demo").innerHTML = this.readyState+" masih ambil data "+this.status;
 
 }
 
 }
 
-ajax.open("GET", "http://scr-cdn.000webhostapp.com/encodedecodejsjson.php", true);
+ajax.open("GET", "https://scr-cdn.000webhostapp.com/encodedecodejsjson.php", true);
 
 ajax.send();
 
